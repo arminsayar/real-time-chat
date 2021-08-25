@@ -5,6 +5,10 @@ const server = http.createServer(app);
 const path = require('path');
 const { Server } = require("socket.io");
 const io = new Server(server);
+const cors = require('cors');
+
+
+app.use(cors());
 
 app.use(express.static(path.join(__dirname, 'public')));
 

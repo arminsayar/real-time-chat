@@ -10,6 +10,7 @@ btn.addEventListener('click', function () {
         name: nameIn.value,
         message: msg.value
     });
+    msg.value = "";
 });
 
 
